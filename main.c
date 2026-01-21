@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+int strlen_copy(char *s) {
+   int count = 0;
+   for (count = 0; *s != '\0'; s++) {
+    count++;
+   }
+   return count;
+}
+
 int main() {
     
     int x = 1;
@@ -30,7 +38,7 @@ int main() {
     // printf("%d\n",restult2);
 
     /*
-    
+
     Adding a & to both sides:
     & (z[1])
     & (* (z + 1))
@@ -49,7 +57,10 @@ int main() {
     // printf("%d\n", (int)x);
     // printf("%p\n", (void *)ip);
 
+    char str[] = "was";
     
+    char *ptr = str;
+    printf("%d\n", strlen_copy(str));
 
     return 0;
 }
