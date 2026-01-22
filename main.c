@@ -48,9 +48,9 @@ int main() {
     */
 
     ip = &z[1];
-    printf("%p\n", (void *)ip);
+    // printf("%p\n", (void *)ip);
     ip = z + 1;
-    printf("%p\n", (void *)ip);
+    // printf("%p\n", (void *)ip);
 
 
     // printf("%p\n", (void *)&x);
@@ -60,7 +60,13 @@ int main() {
     char str[] = "was";
     
     char *ptr = str;
-    printf("%d\n", strlen_copy(str));
+    // printf("%d\n", strlen_copy(str));
+
+    /*
+    SECTION 5.4 ADDRESS ARITHMETIC
+    */
+
+    
 
     return 0;
 }

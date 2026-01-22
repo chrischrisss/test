@@ -1,13 +1,13 @@
 CFLAGS = -Wno-implicit-function-declaration
 
-all: final
+all: app
 
-final: main.o
-	gcc $(CFLAGS) main.o -o final
+app: alloc.o
+	gcc $(CFLAGS) alloc.o -o app
 
-main.o: main.c
-	gcc $(CFLAGS) -c main.c
+alloc.o: alloc.c
+	gcc $(CFLAGS) -c alloc.c
 
 clean:
-	rm main.o final
+	rm alloc.o app
 
