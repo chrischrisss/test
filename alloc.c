@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-#define ALLOCSIZE 1000
+#define ALLOCSIZE 11
 
 static char allocbuf[ALLOCSIZE];
     
@@ -26,13 +26,15 @@ void afree(char *p) {
 int strlen_copy(char *s) {
     char *p = s;
 
-    while (p != '\0') {
+    while (*p != '\0') {
         p++;
     }
     return p -s;
 }
 
 int main() {
+
+    printf("%p\n", (void *)alloc(10));
 
     return 0;
 }
