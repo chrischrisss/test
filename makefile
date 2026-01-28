@@ -2,12 +2,12 @@ CFLAGS = -Wno-implicit-function-declaration
 
 all: app
 
-app: alloc.o
-	gcc $(CFLAGS) alloc.o -o app
+app: arrayp.o
+	gcc $(CFLAGS) arrayp.o -o app
 
-alloc.o: alloc.c
-	gcc $(CFLAGS) -c alloc.c
+arrayp.o: alloc.c
+	gcc $(CFLAGS) -c arrayp.c
 
 clean:
-	rm alloc.o app
+	rm arrayp.o app
 
